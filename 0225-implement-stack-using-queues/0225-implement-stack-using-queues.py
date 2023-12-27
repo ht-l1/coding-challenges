@@ -16,11 +16,7 @@ class MyStack:
 	
 	# looking at the top element without taking out
     def top(self) -> int:
-        for i in range(len(self.q) - 1):
-            self.push(self.q.popleft())
-        res = self.q[0]
-        self.push(self.q.popleft())
-        return res
+        return self.q[-1]
 		
     def empty(self) -> bool:
         return len(self.q) == 0
