@@ -1,13 +1,15 @@
-# Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # storing all the previous elements before current
+        # value : index >> mapping the value to the index of that value
+        prevMap = {} 
         
-        n = len(nums)
+        for i, n in enumerate(nums):
+            diff = target - n
+            # if we find the solution
+            if diff in prevMap:
+                return [prevMap[diff], i]
+            # otherwise we do not find, continue with i
+            prevMap[n] =i
         
-        for i in range(n):
-            for j in range(n):
-                if i != j and nums[i] + nums[j] == target:
-                    return [i, j]
-        
-        return None
+        return
