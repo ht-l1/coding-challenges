@@ -1,7 +1,11 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         
-        if len(s) != len(t):
-            return False
+        # input: strings s and t
+        # output:
+        #   true if t is an anagram of s
+        #   false otherwise
 
-        return sorted(s) == sorted(t)
+        if sorted(s) == sorted(t):
+            return True
+        return False
