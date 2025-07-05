@@ -9,6 +9,7 @@ Created using [LeetHub](https://github.com/QasimWani/LeetHub)
 | [0049-group-anagrams](https://github.com/ht-l1/coding-challenges/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/ht-l1/coding-challenges/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/ht-l1/coding-challenges/tree/master/0347-top-k-frequent-elements) |
+| [0485-max-consecutive-ones](https://github.com/ht-l1/coding-challenges/tree/master/0485-max-consecutive-ones) |
 ## Hash Table
 |  |
 | ------- |
