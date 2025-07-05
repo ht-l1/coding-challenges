@@ -1,15 +1,19 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # storing all the previous elements before current
-        # value : index >> mapping the value to the index of that value
-        prevMap = {} 
-        
-        for i, n in enumerate(nums):
+        # input: array `nums``
+        # input: interger `target``
+        # output: indices of the two numbers that add up to `target`
+
+        # hashmap {value: index} 
+        seen = {}
+
+        # n(current value), i (current index) 
+        for i,n in enumerate(nums):
             diff = target - n
-            # if we find the solution
-            if diff in prevMap:
-                return [prevMap[diff], i]
-            # otherwise we do not find, continue with i
-            prevMap[n] =i
-        
+            if diff in seen:
+                # return a pair of indices
+                return [seen[diff],i]
+            # if not found, store the current index, and continue loop
+            # it means i saw value of n in index i
+            seen[n] = i
         return
